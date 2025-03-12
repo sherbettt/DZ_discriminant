@@ -1,8 +1,8 @@
 import math
 
-#a = int(input('Insert a: '))
-#b = int(input('Insert b: '))
-#c = int(input('Insert c: '))
+a = int(input('Введи значение a: '))
+b = int(input('Введи значение b: '))
+c = int(input('Введи значение c: '))
 
 
 # функция вычисления дискриминанта
@@ -23,12 +23,11 @@ def solve(a,b,c):
 #    if D < 0:
 #        raise StopIteration
 
-#print(discriminant(a,b,c))
-#print(solve(a,b,c))
 
-print(solve(1, 2, 1))
-print(solve(2, 5, 3))
-print(solve(1, -1, 3))
+print(solve(a,b,c))
+#print(solve(1, 2, 1))
+#print(solve(2, 5, 3))
+#print(solve(1, -1, 3))
 
 
 
