@@ -7,6 +7,7 @@ c = int(input('Введи значение c: '))
 # функция вычисления дискриминанта
 def discriminant(a,b,c):
     D = b**2 - 4*a*c
+    print(f'Дискриминант = {D}')
     return D
 
 # квадратное уравнение и основной цикл
@@ -21,24 +22,10 @@ def solve(a,b,c):
         return(f'Дискриминант имеет 1 корень: x = {x}')
     else:
         return("при D<0 решение нет")
-#    if D < 0:
-#        raise StopIteration
 
 
 print(solve(a,b,c))
-print(discriminant(a,b,c))
+#print(discriminant(a,b,c))
 #print(solve(1, 2, 1))
 #print(solve(2, 5, 3))
 #print(solve(1, -1, 3))
-
-
-
-
-'''
-Условие/уравнение:
-ax² + bx + c = 0, где a != 0
-Решение:
-x = (-b±D)/2·a, 
-где D = b²−4ac — дискриминант квадратного уравнения.
- x = (-b±√D)/2a означает, что x1 = (-b+√D)/2a, x2 = (-b-√D)/2a.
-'''
