@@ -21,7 +21,7 @@ def solve(a,b,c):
         x = -b / (2 * a)
         return(f'Дискриминант имеет 1 корень: x = {x}')
     else:
-        return("при D<0 решение нет")
+        return("D<0 ---> решений нет")
 
 
 print(solve(a,b,c))
