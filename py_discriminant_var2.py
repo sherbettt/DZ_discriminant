@@ -4,7 +4,6 @@ a = int(input('Введи значение a: '))
 b = int(input('Введи значение b: '))
 c = int(input('Введи значение c: '))
 
-
 # функция вычисления дискриминанта
 def discriminant(a,b,c):
     D = b**2 - 4*a*c
@@ -13,6 +12,7 @@ def discriminant(a,b,c):
 # квадратное уравнение и основной цикл
 def solve(a,b,c):
     D = discriminant(a, b, c)
+    return D
     if D > 0:
         x1 = int((-b - math.sqrt(D)) / (2 * a))
         x2 = int((-b + math.sqrt(D)) / (2 * a))
@@ -27,7 +27,7 @@ def solve(a,b,c):
 
 
 print(solve(a,b,c))
-print(discriminant(a,b,c))
+#print(discriminant(a,b,c))
 #print(solve(1, 2, 1))
 #print(solve(2, 5, 3))
 #print(solve(1, -1, 3))
