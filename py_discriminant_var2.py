@@ -21,7 +21,10 @@ def solve(a,b,c):
         x = -b / (2 * a)
         return(f'Дискриминант имеет 1 корень: x = {x}')
     else:
+        D < 0
         return("D<0 ---> решений нет")
+#    if D < 0:
+#        raise Exception("D<0 ---> решений нет")
 
 
 print(solve(a,b,c))
@@ -29,3 +32,4 @@ print(solve(a,b,c))
 #print(solve(1, 2, 1))
 #print(solve(2, 5, 3))
 #print(solve(1, -1, 3))
+#raise TypeError("D<0 ---> решений нет")
