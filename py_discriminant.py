@@ -4,11 +4,11 @@ a = int(input('Введи значение a: '))
 b = int(input('Введи значение b: '))
 c = int(input('Введи значение c: '))
 
-
 # функция вычисления дискриминанта
 def discriminant(a,b,c):
     global D
     D = b**2 - 4*a*c
+    return(f'D = {D}')
 
 # квадратное уравнение и основной цикл
 def solve(a,b,c):
@@ -23,12 +23,11 @@ def solve(a,b,c):
 #    if D < 0:
 #        raise StopIteration
 
-
 print(solve(a,b,c))
+print(discriminant(a,b,c))
 #print(solve(1, 2, 1))
 #print(solve(2, 5, 3))
 #print(solve(1, -1, 3))
-
 
 
 
